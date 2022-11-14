@@ -27,8 +27,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Add docker config
-        run: cp -r /github/home/.docker /root
       - name: Add keypair
         run: echo ${{ secrets.SOLANA_KEYPAIR_JSON }} > $HOME/.config/solana/id.json
 #       - name: Run anchor test

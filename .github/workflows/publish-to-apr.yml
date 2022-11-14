@@ -36,4 +36,4 @@ jobs:
       - name: Point to Mainnet (required for publishing)
         run: sed -i 's/^cluster = ".*/cluster = "mainnet"/' Anchor.toml
       - name: Publish Source Code
-        run: yes 'yes' | anchor publish starter_project --skip-build
+        run: yes 'yes' | anchor publish anchordemo2 --skip-build

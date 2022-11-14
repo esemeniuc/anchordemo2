@@ -28,7 +28,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Fix Docker warning
-        uses: echo '{}' > ~/.docker/config.json
+        run: echo '{}' > ~/.docker/config.json
       - name: Add keypair
         run: echo ${{ secrets.SOLANA_KEYPAIR_JSON }} > $HOME/.config/solana/id.json
 #       - name: Run anchor test

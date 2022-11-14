@@ -31,8 +31,8 @@ jobs:
         run: cp -r /github/home/.docker /root
       - name: Add keypair
         run: echo ${{ secrets.SOLANA_KEYPAIR_JSON }} > $HOME/.config/solana/id.json
-      - name: Run anchor test
-        run: yarn; anchor test
+#       - name: Run anchor test
+#         run: yarn; anchor test
       - name: Anchor Login
         run: anchor login ${{ secrets.ANCHOR_PUBLISH_TOKEN }}
       - name: Point to Mainnet (required for publishing)

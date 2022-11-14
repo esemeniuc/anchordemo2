@@ -10,7 +10,7 @@ name: deploy-to-apr
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 jobs:
   publish-to-apr:
